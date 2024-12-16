@@ -1,4 +1,4 @@
-account number,amount,status,due date,category
+account_number,amount,status,due_date,category
 125598167,156,Paid,2024-12-30,Heat
 67481387,120,Paid,2024-12-28,Heat
 116203377,105,Unpaid,2024-12-22,Electricity
