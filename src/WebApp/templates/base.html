@@ -1,0 +1,45 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>UtilityUnity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand"  href="{{url_for('index')}}">Home Page</a>
+    </nav>
+
+{% block content %}
+
+
+{% endblock %}
+
+<style>
+    
+    .b-example-divider {
+      height: 5px; 
+      background-color: #ddd; 
+      margin: 20px 0; 
+      border: none;
+    }
+</style>
+
+<div class="b-example-divider"></div>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">Powered by a local NGO!</span>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+</body>
+</html>
