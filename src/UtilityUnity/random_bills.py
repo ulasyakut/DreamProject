@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 fake = Faker()
 
 df = pd.read_csv('citizen_data.csv')
-df = df['account number']
+df = df['account_id']
 account_series = pd.Series(df)
 
 
@@ -19,10 +19,10 @@ status = np.random.choice(['Paid', 'Unpaid'], size=len(bills))
 due_dates = [(datetime.now() + timedelta(days=np.random.randint(1, 31))).date() for _ in range(len(bills))]
 category = np.random.choice(['Heat', 'Electricity'], size=len(bills))
 bill_data = pd.DataFrame({
-    "account number": random_accounts,
+    "account_id": random_accounts,
     "amount": bills,
     "status": status,
-    "due date": due_dates,
+    "due_date": due_dates,
     "category": category
 })
 

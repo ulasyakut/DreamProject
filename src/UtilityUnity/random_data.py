@@ -37,7 +37,7 @@ for i in range(30):
     person['ssn'] = ssn[i]
     person['name'] = name[i]
     person['zipcode'] = zipcode[i]
-    person['account number'] = account_number[i]
+    person['account_id'] = account_number[i]
     person['dob'] = dob[i]
     persons.append(person)
 
