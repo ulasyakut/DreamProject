@@ -2,6 +2,7 @@ import sqlite3
 import csv
 
 conn = sqlite3.connect('company.db')
+conn.execute("PRAGMA foreign_keys = ON")
 cursor = conn.cursor()
 
 
