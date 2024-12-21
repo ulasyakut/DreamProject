@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div lass="mt-4 p-5 bg-primary text-white rounded">
+
+        <h1>Here is the list of user:</h1>
+<ul>
+          {% for item in users %}
+               <li>  {{ item.id , item.name,item.ssn,item.dob}}  </li>   
+                {% endfor %}
+
+      </ul>
+            
+
+
+
+    </div>
+    
+
+
+{% endblock%}

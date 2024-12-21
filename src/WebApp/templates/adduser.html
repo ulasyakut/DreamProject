@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+        
+        <p>Add a new user to our database</p>
+        <form method="POST">
+            {{form.hidden_tag()}}
+            {{form.name.label}} {{form.name()}}
+            {{form.ssn.label}}  {{form.ssn()}}
+            {{form.zipcode.label}} {{form.zipcode()}}
+            {{form.dob.label}}{{form.dob()}}
+            {{form.submit()}}
+
+        </form>
+    </div>
+
+
+{% endblock%}
